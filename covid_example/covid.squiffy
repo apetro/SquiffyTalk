@@ -1,0 +1,152 @@
+# Got COVID-19?
+
+(Based on [Public Health Madison Dane County website](https://publichealthmdc.com/coronavirus/what-to-do-if-you-are-sick-or-possibly-exposed) as of 2022-10-04.
+This is an example of implementing a simple expert system in Squiffy,
+not a tool for real medical advice.)
+
++++So, I tested positive for COVID-19.
+
+Sorry to hear that.
+
+Did you [[experience symptoms]], or [[not experience symptoms]]?
+
+You have experienced symptoms if you have experienced symptoms **at any time**,
+even if symptoms developed only days after your positive test.
+
+([Symptoms of COVID-19](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) can include
+
++ fever or chills,
++ cough,
++ shortness of breath,
++ difficulty breathing,
++ fatigue,
++ muscle aches,
++ body aches,
++ headache,
++ new loss of taste or smell,
++ sore throat,
++ congestion,
++ runny nose,
++ nausea,
++ vomiting, or
++ diarrhea.)
+
+[[experience symptoms]]:
+
+**Day 0 of isolation is the day your symptoms started**, regardless of when you tested positive.
+Day 1 is the first full day after the day your symptoms started.
+
++ Today is [[within days 0 through 5]](isolate).
++ Today is [[within days 6 through 10]](check symptom severity day 6 to 10).
++ Today is [[day 11 or later]](check for severe illness after day 10).
+
+[[check symptom severity day 6 to 10]]:
+
+Choose the first of these that is true for you.
+
++ [[I have a weakened immune system]](doctor mediated isolation)
++ This bout of COVID-19 has made me [[severely ill]](doctor mediated isolation)
++ This bout of COVOID-19 has made me [[moderately ill, with shortness of breath or difficulty breathing]](isolate)
++ [[I was or am mildly ill with COVID-19]](check for improving symptoms)
+
+
+[[doctor mediated isolation]]:
+
+You should isolate for at least 10 days. **Talk to your doctor before ending isolation.**
+
+[[check for severe illness after day 10]]:
+
+Choose the first of these that is true for you.
+
++ [[I have a weakened immune system]](doctor mediated isolation).
++ This bout of COVID-19 has made me [[severely ill]](doctor mediated isolation).
++ [[None of the above]](check for improving symptoms after day 10).
+
+[[check for improving symptoms]]:
+
+Are your symptoms [[improving]](check for fever) or [[not yet improving]](isolate)?
+
+[[check for improving symptoms after day 10]]:
+
+Are your symptoms [[improving]](check for fever after day 10) or [[not yet improving]](isolate)?
+
+[[check for fever]]:
+
+Within the last 24 hours, have you
+
++ [[had a fever]](isolate)
++ [[not had a fever, using fever-reducing medication]](isolate)
++ [[not had a fever, without using fever-reducing medication]](take precautions)
+
+[[check for fever after day 10]]:
+
+Within the last 24 hours, have you
+
++ [[had a fever]](isolate)
++ [[not had a fever, using fever-reducing medication]](isolate)
++ [[not had a fever, without using fever-reducing medication]](routine care)
+
+[[not experience symptoms]]:
+
+**Day 0 is the day you were tested** (not the day you received your positive test result).
+Day 1 is the first full day following the day you were tested.
+
+Select the first of these that is true:
+
++ I have [[developed symptoms]].
+  ([Symptoms of COVID-19](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) can include
+  fever or chills,
+  cough,
+  shortness of breath,
+  difficulty breathing,
+  fatigue,
+  muscle aches,
+  body aches,
+  headache,
+  new loss of taste or smell,
+  sore throat,
+  congestion,
+  runny nose,
+  nausea,
+  vomiting, or
+  diarrhea.)
++ Now is within [[day 0 through 5 of my isolation]](isolate), and I have not developed symptoms of COVID-19.
++ Now is within [[day 6 through 10 of my isolation]](take precautions), and I have not developed symptoms of COVID-19.
++ Now is [[day 11 of my isolation or later]](routine care), and I have not developed symptoms of COVID-19.
+
+[[developed symptoms]]:
+
+So sorry to hear that you have developed symptoms of COVID-19.
+
+[[Your isolation period restarts]](experience symptoms) with the day your symptoms started as your new day 0.
+
+[[isolate]]:
+
+You should keep isolating.
+
+You can use this tool again tomorrow to see if you should keep isolating then.
+
+[[take precautions]]:
+
+Are you [[able to wear a mask]](end isolation), or [[not able to use a mask]](isolate)?
+(Children under 2 are considered [[not able to wear a mask]](isolate).)
+
+[[end isolation]]:
+
+You may end isolation.
+
+You can still spread COVID-19, so continue to take precautions.
+
++ Wear a high-quality mask any time you are around others inside your home or in public.
++ Do not travel.
++ Avoid being around people who are more likely to get very sick from COVID-19.
+
+
+[[routine care]]:
+
+Congratulations!
+
+You have completed isolation and additional precautions followup on your COVID-19 illness.
+
+
+
