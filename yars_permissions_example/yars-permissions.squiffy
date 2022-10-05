@@ -1,0 +1,83 @@
+(This is an example of representing YARS permission checking logic in Squiffy.)
+
+Context: the user's web browser is making a request of the YARS REST API backend,
+probably as directed by the YARS React front end JavaScipt application running in the browser.
+
+First, is this request [[part of a logged in Shibboleth SP session]], or [[not part of a logged in Shibboleth SP session]]?
+
+[[not part of a logged in Shibboleth SP session]]:
+
+The Shibboleth SP bounces the request to the Shibboleth IdP for user login.
+
+[[part of a logged in Shibboleth SP session]]:
+
+Okay, the user is logged in via Shibboleth.
+
+Does the user [[have the System Director role]], or does the user [[not have the System Director role]]?
+
+[[have the System Director role]]:
+
+Okay, the logged in user has the System Director role.
+
+All YARS data is in the context of a specific organization, like UW-Madison or UW System Administration or UW-Parkside or...
+
+Is this request [[in the context of UW System Administration]](allowed), or is this request [[not in the context of UW System Administration]](allowed read-only)?
+
+[[not have the System Director role]]:
+
+Is the attempted action a [[detail or list action]](detail or list action) (read or edit existing data) or [[something else]](write new data) (an OPTIONS or POST which have to do with writing new objects)?
+
+[[detail or list action]]:
+
+Is this a request for data [[in the context of the user organization]](read in org) or [[in the context of some other organization]](no data):
+
+
+[[read in org]]:
+
+Is this request specifically a request to [[list multiple objects]](allowed) or a request to read or edit [[detail about a specific object]]?
+
+[[detail about a specific object]]:
+
+Does the user have [[permission on all objects of that model type]](allowed)?
+Or does the user [[not have permission on all objects of that model type]]?
+
+(For example, a Program Liaison has "model permissions" on all Programs and Sessions.
+This permission is then effectively limited to only Programs and Sessions within her Organization when YARS filters query results to only objects within the requesting user's Organization.)
+
+
+[[not have permission on all objects of that model type]]:
+
+Does the user [[have permission on the specific object]](allowed) in question?
+Or does the user [[not have permission on the specific object in question]](denied)?
+
+(For example, users in the Program Administrator role for a specific Program have permission on that specific Program and on its Sessions).
+
+[[write new data]]:
+
+Does the user [[have model permissions on the object type]](allowed) the API call is about? Or does the user [[not have model permissions on the object type]](denied)?
+
+For example, if this is a POST to write a new Program, does the user have model permissions on the Program object type?
+
+[[allowed read-only]]:
+
+Is this API request an attempt to [[modify data]](denied) or [[only to read data]](allowed)?
+
+[[allowed]]:
+
+**The request is allowed.**
+
+[[denied]]:
+
+**The request is denied.**
+
+[[no data]]:
+
+Well.
+
+The request won't outright denied,
+but when YARS filters the results to data within the user's organization,
+there will be no remaining data in the results,
+so the API call will return and empty list or a 404 NOT FOUND,
+so permissions on this request become moot.
+
+
