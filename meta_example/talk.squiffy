@@ -1,3 +1,5 @@
+What is Squiffy? Squiffy is {rotate:a language:a compiler:a development environment:open source:interesting}.
+
 [[Let's begin]](What is Squiffy?)
 
 [[What is Squiffy?]]:
@@ -6,7 +8,7 @@ What is Squiffy?
 
 Squiffy is
 
-+ a [Language]
++ a [[Language]]
 + a [[Compiler]]
 + a [[Development Environment]]
 + [[Open source]]
@@ -20,21 +22,28 @@ In Squiffy, you define **sections** and **passages**.
 
 You can do some really simple variable setting.
 
-[[What else is Squiffy?]]
+[[What else is Squiffy?]](What is Squiffy?)
 
 [[Compiler]]:
 
 Squiffy is a compiler, that will compile the Squiffy language to HTML and JavaScript.
 
+[[What else is Squiffy?]](What is Squiffy?)
+
 [[Development Environment]]:
 
 Squiffy is a development environment. There's a basic desktop application with a built-in text editor, a preview pane.
+
+[[What else is Squiffy?]](What is Squiffy?)
 
 [[Open source]]:
 
 Squiffy is open source. You could grab the source code and add the features you want. Possibly even contribute to it, or fork it to make something new.
 
+[[What else is Squiffy?]](What is Squiffy?)
+
 [[Interesting]]:
 
 Okay, so, is Squiffy interesting? What's interesting about it?
 
+[[What else is Squiffy?]](What is Squiffy?)

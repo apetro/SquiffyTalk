@@ -610,37 +610,37 @@ squiffy.story.start = '_default';
 squiffy.story.id = '295f5e969b';
 squiffy.story.sections = {
 	'_default': {
-		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">Let&#39;s begin</a></p>",
+		'text': "<p>What is Squiffy? Squiffy is {rotate:a language:a compiler:a development environment:open source:interesting}.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">Let&#39;s begin</a></p>",
 		'passages': {
 		},
 	},
 	'What is Squiffy?': {
-		'text': "<p>What is Squiffy?</p>\n<p>Squiffy is</p>\n<ul>\n<li>a <a class=\"squiffy-link link-passage\" data-passage=\"Language\" role=\"link\" tabindex=\"0\">Language</a></li>\n<li>a <a class=\"squiffy-link link-section\" data-section=\"Compiler\" role=\"link\" tabindex=\"0\">Compiler</a></li>\n<li>a <a class=\"squiffy-link link-section\" data-section=\"Development Environment\" role=\"link\" tabindex=\"0\">Development Environment</a></li>\n<li><a class=\"squiffy-link link-section\" data-section=\"Open source\" role=\"link\" tabindex=\"0\">Open source</a></li>\n<li><a class=\"squiffy-link link-section\" data-section=\"Interesting\" role=\"link\" tabindex=\"0\">Interesting</a></li>\n</ul>",
+		'text': "<p>What is Squiffy?</p>\n<p>Squiffy is</p>\n<ul>\n<li>a <a class=\"squiffy-link link-section\" data-section=\"Language\" role=\"link\" tabindex=\"0\">Language</a></li>\n<li>a <a class=\"squiffy-link link-section\" data-section=\"Compiler\" role=\"link\" tabindex=\"0\">Compiler</a></li>\n<li>a <a class=\"squiffy-link link-section\" data-section=\"Development Environment\" role=\"link\" tabindex=\"0\">Development Environment</a></li>\n<li><a class=\"squiffy-link link-section\" data-section=\"Open source\" role=\"link\" tabindex=\"0\">Open source</a></li>\n<li><a class=\"squiffy-link link-section\" data-section=\"Interesting\" role=\"link\" tabindex=\"0\">Interesting</a></li>\n</ul>",
 		'passages': {
 		},
 	},
 	'Language': {
-		'text': "<p>Squiffy is a lightweight language built on <em>Markdown</em>.</p>\n<p>In Squiffy, you define <strong>sections</strong> and <strong>passages</strong>.</p>\n<p>You can do some really simple variable setting.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What else is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
+		'text': "<p>Squiffy is a lightweight language built on <em>Markdown</em>.</p>\n<p>In Squiffy, you define <strong>sections</strong> and <strong>passages</strong>.</p>\n<p>You can do some really simple variable setting.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
 		'passages': {
 		},
 	},
 	'Compiler': {
-		'text': "<p>Squiffy is a compiler, that will compile the Squiffy language to HTML and JavaScript.</p>",
+		'text': "<p>Squiffy is a compiler, that will compile the Squiffy language to HTML and JavaScript.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
 		'passages': {
 		},
 	},
 	'Development Environment': {
-		'text': "<p>Squiffy is a development environment. There&#39;s a basic desktop application with a built-in text editor, a preview pane.</p>",
+		'text': "<p>Squiffy is a development environment. There&#39;s a basic desktop application with a built-in text editor, a preview pane.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
 		'passages': {
 		},
 	},
 	'Open source': {
-		'text': "<p>Squiffy is open source. You could grab the source code and add the features you want. Possibly even contribute to it, or fork it to make something new.</p>",
+		'text': "<p>Squiffy is open source. You could grab the source code and add the features you want. Possibly even contribute to it, or fork it to make something new.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
 		'passages': {
 		},
 	},
 	'Interesting': {
-		'text': "<p>Okay, so, is Squiffy interesting? What&#39;s interesting about it?</p>",
+		'text': "<p>Okay, so, is Squiffy interesting? What&#39;s interesting about it?</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"What is Squiffy?\" role=\"link\" tabindex=\"0\">What else is Squiffy?</a></p>",
 		'passages': {
 		},
 	},
